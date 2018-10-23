@@ -4,6 +4,17 @@
 <head>
     <title>Helix Preset Viewer</title>
     <meta name="description" content="A web-based viewer for Helix, Helix Rack, Helix LT, and HX Stomp presets.">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-640359-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-640359-4');
+    </script>
+    
     <!-- development version, includes helpful console warnings -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <style>
@@ -732,113 +743,488 @@
             /* Delays */
             
             "HD2_DelaySimpleDelay": {
-                "type":"delay",
-                "name": "Simple Delay"
+                "type": "delay", 
+                "name": "Simple Delay" 
             },
-            "HD2_DelayElephantMan": {
-                "type":"delay",
-                "name": "Elephant Man"
+            "HD2_DelayModChorusEcho": { 
+                "type": "delay", 
+                "name": "Mod/Cho Echo" 
             },
-            "HD2_DelayReverseDelay": {
-                "type":"delay"
+            "HD2_DelayDualDelay": { 
+                "type": "delay", 
+                "name": "Dual Delay" 
+            },
+            "HD2_DelayMultitap4": { 
+                "type": "delay", 
+                "name": "Multitap 4" 
+            },
+            "HD2_DelayMultitap6": { 
+                "type": "delay", 
+                "name": "Multitap 6" 
+            },
+            "HD2_DelayPingPong": { 
+                "type": "delay", 
+                "name": "Ping Pong" 
+            },
+            "HD2_DelaySweepEcho": { 
+                "type": "delay", 
+                "name": "Sweep Echo" 
+            },
+            "HD2_DelayDuckedDelay": { 
+                "type": "delay", 
+                "name": "Ducked Delay" 
+            },
+            "HD2_DelayReverseDelay": { 
+                "type": "delay", 
+                "name": "Reverse Delay" 
+            },
+            "HD2_DelayVintageDigitalV2": { 
+                "type": "delay", 
+                "name": "Vintage Digital" 
+            },
+            "HD2_DelaySwellVintageDigital": { 
+                "type": "delay", 
+                "name": "Vintage Swell"
+            },
+            "HD2_DelayPitch": { 
+                "type": "delay", 
+                "name": "Pitch Echo" 
+            },
+            "HD2_DelayTransistorTape": {
+                "type": "delay", 
+                "name": "Transistor Tape"
+            },
+            "HD2_DelayCosmosEcho": { 
+                "type": "delay",
+                "name": "Cosmos Echo" 
+            },
+            "HD2_DelayHarmonyDelay": { 
+                "type": "delay", 
+                "name": "Harmony Delay" 
+            },
+            "HD2_DelayBucketBrigade": { 
+                "type": "delay", 
+                "name": "Bucket Brigade" 
+            },
+            "HD2_DelayAdriaticDelay": { 
+                "type": "delay", 
+                "name": "Adriatic Delay" 
+            },
+            "HD2_DelayAdriaticSwell": { 
+                "type": "delay",
+                "name": "Adriatic Swell"
+            },
+            "HD2_DelayElephantMan": { 
+                "type": "delay", 
+                "name": "Elephant Man" 
+            },
+            "HD2_DelayMultiPass": { 
+                "type": "delay", 
+                "name": "Multi Pass"
+            },
+            "HD2_DL4PingPong": { 
+                "type": "delay", 
+                "name": "Ping Pong" 
+            },
+            "HD2_DL4DynamicDelayStereo": { 
+                "type": "delay",
+                "name": "Dynamic" 
+            },
+            "HD2_DL4StereoDelay": {
+                "type": "delay", 
+                "name": "Stereo" 
+            },
+            "HD2_DL4DigDelay": { 
+                "type": "delay",
+                "name": "Digital" 
+            },
+            "HD2_DL4DigDelayWithMod": { 
+                "type": "delay", 
+                "name": "Dig w/Mod"
+            },
+            "HD2_DL4Reverse": { 
+                "type": "delay", 
+                "name": "Reverse"
+            },
+            "HD2_DL4LowResDelay": {
+                "type": "delay", 
+                "name": "Lo Res"
+            },
+            "HD2_DL4TubeEchoStereo": { 
+                "type": "delay", 
+                "name": "Tube Echo" 
+            },
+            "HD2_DL4TapeEchoStereo": { 
+                "type": "delay", 
+                "name": "Tape Echo" 
+            },
+            "HD2_DL4SweepEchoStereo": {
+                "type": "delay",
+                "name": "Sweep Echo"
+            },
+            "HD2_DL4EchoPlatterStereo": { 
+                "type": "delay", 
+                "name": "Echo Platter"
+            },
+            "HD2_DL4AnalogDelayStereo": {
+                "type": "delay",
+                "name": "Analog Echo" 
+            },
+            "HD2_DL4AnalogDelayStereoMod": {
+                "type": "delay", 
+                "name": "Analog w/Mod" 
+            },
+            "HD2_DL4AutoVolStereo": { 
+                "type": "delay", 
+                "name": "Auto-Vol Echo"
+            },
+            "HD2_DL4MultiheadStereo": { 
+                "type": "delay", 
+                "name": "Multi-Head" 
             },
             
             /* Mod */
             
             "HD2_TremoloOpticalTrem": {
-                "type":"mod"
+                "type": "mod",
+                "name": "Optical Trem"
+            },
+            "HD2_ChorusTrinityChorus": {
+                "type": "mod",
+                "name": "Trinity Chorus"
+            },
+            "HD2_RotaryVibeRotary": {
+                "type": "mod",
+                "name": "Vibe Rotary"
+            },
+            "HD2_RingModulatorAMRingMod": {
+                "type": "mod",
+                "name": "AM Ring Mod"
+            },
+            "HD2_RingModulatorPitchRingMod": {
+                "type": "mod",
+                "name": "Pitch Ring Mod"
+            },
+            "HD2_DelayDoubleDouble": {
+                "type": "mod",
+                "name": "Double Take"
+            },
+            "HD2_Rotary145Rotary": {
+                "type": "mod",
+                "name": "145 Rotary"
+            },
+            "HD2_Rotary122Rotary": {
+                "type": "mod",
+                "name": "122 Rotary"
+            },
+            "HD2_Chorus70sChorus": {
+                "type": "mod",
+                "name": "70s Chorus"
+            },
+            "HD2_FlangerGrayFlanger": {
+                "type": "mod",
+                "name": "Gray Flanger"
+            },
+            "HD2_PhaserDeluxePhaser": {
+                "type": "mod",
+                "name": "Deluxe Phaser"
+            },
+            "HD2_Tremolo60sBiasTrem": {
+                "type": "mod",
+                "name": "60s Bias Trem"
+            },
+            "HD2_FlangerCourtesanFlange": {
+                "type": "mod",
+                "name": "Courtesan Flange"
+            },
+            "HD2_TremoloTremolo": {
+                "type": "mod",
+                "name": "Tremolo"
+            },
+            "HD2_Chorus": {
+                "type": "mod",
+                "name": "Chorus"
+            },
+            "HD2_VibratoBubbleVibrato": {
+                "type": "mod",
+                "name": "Bubble Vibrato"
+            },
+            "HD2_TremoloHarmonic": {
+                "type": "mod",
+                "name": "Harmonic Tremolo"
+            },
+            "HD2_ChorusPlastiChorus": {
+                "type": "mod",
+                "name": "PlastiChorus"
+            },
+            "HD2_TremoloPattern": {
+                "type": "mod",
+                "name": "Pattern Tremolo"
+            },
+            "HD2_FlangerHarmonicFlanger": {
+                "type": "mod",
+                "name": "Harmonic Flanger"
+            },
+            "HD2_PhaserScriptModPhase": {
+                "type": "mod",
+                "name": "Script Mod Phase"
+            },
+            "HD2_FlangerDynamixFlanger": {
+                "type": "mod",
+                "name": "Dynamix Flanger"
+            },
+            "HD2_PhaserUbiquitousVibe": {
+                "type": "mod",
+                "name": "Ubiquitous Vibe"
+            },
+            
+            
+            "HD2_MM4RingModulator": {
+                "type": "mod",
+                "name": "Ring Modulator"
+            },
+            "HD2_MM4FrequencyShifter": {
+                "type": "mod",
+                "name": "Frequency Shifter"
+            },
+            "HD2_M1380AFlanger": {
+                "type": "mod",
+                "name": "80A Flanger"
+            },
+            "HD2_M13ACFlanger": {
+                "type": "mod",
+                "name": "AC Flanger"
+            },
+            "HD2_MM4RotaryDrumHorn": {
+                "type": "mod",
+                "name": "Rotary Drum/Horn"
+            },
+            "HD2_MM4RotaryDrum": {
+                "type": "mod",
+                "name": "RotaryDrum"
+            },
+            "HD2_MM4TriChorus": {
+                "type": "mod",
+                "name": "Tri Chorus"
+            },
+            "HD2_MM4UVibe": {
+                "type": "mod",
+                "name": "UVibe"
+            },
+            "HD2_MM4JetFlanger": {
+                "type": "mod",
+                "name": "Jet Flanger"
+            },
+            "HD2_MM4Panner": {
+                "type": "mod",
+                "name": "Panner"
+            },
+            "HD2_MM4PitchVibrato": {
+                "type": "mod",
+                "name": "Pitch Vibrato"
+            },
+            "HD2_MM4BiasTremolo": {
+                "type": "mod",
+                "name": "Bias Tremolo"
+            },
+            "HD2_MM4AnalogChorus": {
+                "type": "mod",
+                "name": "Analog Chorus"
+            },
+            "HD2_MM4DualPhaser": {
+                "type": "mod",
+                "name": "Dual Phaser"
+            },
+            "HD2_MM4OptoTremolo": {
+                "type": "mod",
+                "name": "Opto Tremolo"
+            },
+            "HD2_MM4AnalogFlanger": {
+                "type": "mod",
+                "name": "Analog Flanger"
+            },
+            "HD2_MM4ScriptPhase": {
+                "type": "mod",
+                "name": "Script Phase"
+            },
+            "HD2_MM4Phaser": {
+                "type": "mod",
+                "name": "Phaser"
+            },
+            "HD2_MM4PatternTrem": {
+                "type": "mod",
+                "name": "Pattern Trem"
+            },
+            "HD2_MM4PannedPhaser": {
+                "type": "mod",
+                "name": "Panned Phaser"
+            },
+            "HD2_MM4Dimension": {
+                "type": "mod",
+                "name": "Dimension"
+            },
+            "HD2_MM4BarberpolePhaser": {
+                "type": "mod",
+                "name": "Barberpole Phaser"
             },
             
             /* IR */
             
             "HD2_ImpulseResponse1024": {
-                "type":"mod"
+                "type": "ir",
+                "name": "IR 1024"
             },
             
             /* Cabs */
             
             "HD2_Cab4X12CaliV30": {
-                "type":"cab",
+                "type": "cab",
                 "name": "4X12 Cali V30"
             },
             "HD2_Cab4x12XXLV30": {
-                "type":"cab",
+                "type": "cab",
                 "name": "4x12 XXL V30"
             },
             
             /* Pitch/Filter */
             
             "HD2_PitchDualPitch": {
-                "type":"pitch"
+                "type": "pitch",
+                "name": "Dual Pitch"
             },
             
             /* Comp */
             
             "HD2_CompressorDeluxeComp": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Deluxe Comp"
             },
             "HD2_CompressorRedSqueeze": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Red Squeeze"
             },
             "HD2_CompressorKinkyComp": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Kinky Comp"
             },
             "HD2_CompressorLAStudioComp": {
-                "type":"comp",
+                "type": "comp",
                 "name": "LA Studio Comp"
             },
             "HD2_Compressor3BandComp": {
-                "type":"comp",
+                "type": "comp",
                 "name": "3-Band Comp"
             },
             "HD2_GateNoiseGate": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Noise Gate"
             },
             "HD2_GateHardGate": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Hard Gate"
             },
             "HD2_CompressorAutoSwell": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Autoswell"
             },
             "HD2_DM4TubeComp": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Tube Comp"
             },
             "HD2_DM4RedComp": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Red Comp"
             },
             "HD2_DM4BlueComp": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Blue Comp"
             },
             "HD2_DM4BlueCompTreb": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Blue Comp Treb"
             },
             "HD2_DM4VettaComp": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Vetta Comp"
             },
             "HD2_DM4VettaJuice": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Vetta Juice"
             },
             "HD2_DM4BoostComp": {
-                "type":"comp",
+                "type": "comp",
                 "name": "Boost Comp"
             },
     
             /* Reverb */
             
+            "HD2_ReverbGlitz": { 
+                "type": "reverb",
+                "name": "Glitz" 
+            },
+            "HD2_ReverbGanymede": { 
+                "type": "reverb",
+                "name": "Ganymede" 
+            },
+            "HD2_ReverbSearchlights": {
+                "type": "reverb", 
+                "name": "Searchlights" 
+            },
+            "HD2_ReverbPlateaux": {
+                "type": "reverb", 
+                "name": "Plateaux" 
+            },
+            "HD2_ReverbDoubleTank": { 
+                "type": "reverb",
+                "name": "Double Tank"
+            },
+            "HD2_ReverbPlate": { 
+                "type": "reverb", 
+                "name": "Plate" 
+            },
+            "HD2_ReverbRoom": {
+                "type": "reverb", 
+                "name": "Room"
+            },
+            "HD2_ReverbChamber": {
+                "type": "reverb",
+                "name": "Chamber" 
+            },
+            "HD2_ReverbHall": { 
+                "type": "reverb", 
+                "name": "Hall" 
+            },
+            "HD2_ReverbEcho": { 
+                "type": "reverb", 
+                "name": "Echo" 
+            },
+            "HD2_ReverbTile": { 
+                "type": "reverb", 
+                "name": "Tile" 
+            },
             "HD2_ReverbCave": {
-                "type":"reverb"
+                "type": "reverb", 
+                "name": "Cave" 
+            },
+            "HD2_ReverbDucking": { 
+                "type": "reverb", 
+                "name": "Ducking"
+            },
+            "HD2_ReverbOcto": { 
+                "type": "reverb",
+                "name": "Octo"
+            },
+            "HD2_Reverb63Spring": {
+                "type": "reverb", 
+                "name": "'63 Spring" 
+            },
+            "HD2_ReverbSpring": { 
+                "type": "reverb", 
+                "name": "Spring"
+            },
+            "HD2_ReverbParticle": { 
+                "type": "reverb",
+                "name": "Particle Verb" 
             }
         };
         
